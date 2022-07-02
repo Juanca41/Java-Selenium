@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Login Screen Tests]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <listeners>
+    <listener class-name="com.bettervet.appointment.base.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Positive Login Test(failed)">
+    <parameter name="password" value="Helloworld10"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="deviceName" value="Samsung Galaxy S20 Ultra"/>
+    <parameter name="username" value="juancarlosgularte@bettervet.com"/>
+    <classes>
+      <class name="com.bettervet.appointment.loginScreen.LoginScreenTests">
+        <methods>
+          <include name="positiveLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.bettervet.appointment.loginScreen.LoginScreenTests -->
+    </classes>
+  </test> <!-- Positive Login Test(failed) -->
+</suite> <!-- Failed suite [Login Screen Tests] -->

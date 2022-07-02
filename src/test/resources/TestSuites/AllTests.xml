@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Regression" verbose="1"  allow-return-values="true">
+
+  <test name="PositiveLoginTest" >
+  	<parameter name="username"  value="juancarlosgularte@bettervet.com"/>
+	<parameter name="password"  value="Helloworld10"/>
+    <classes>
+       <class name="com.bettervet.appointment.LoginscreenTests">
+	       <methods>
+					<include name="positiveLogin"/>
+			</methods>
+       </class>
+    </classes>
+  </test>
+
+  <test name="NegativeLoginTest" >
+  	<parameter name="username"  value="juancarlosgularte"/>
+	<parameter name="password"  value="Helloworld10"/>
+	<parameter name="expected_error_msg"  value="Please enter a valid email address"/>
+
+    <classes>
+       <class name="com.bettervet.appointment.LoginscreenTests">
+	       <methods>
+					<include name="negativeLogin"/>
+			</methods>
+       </class>
+    </classes>
+  </test>
+  
+</suite>

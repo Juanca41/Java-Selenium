@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <test thread-count="5" name="PositiveLoginTest(failed)">
+    <parameter name="password" value="Helloworld10"/>
+    <parameter name="username" value="juancarlosgularte@bettervet.com"/>
+    <classes>
+      <class name="com.bettervet.appointment.PositiveLoginTest">
+        <methods>
+          <include name="positiveLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bettervet.appointment.PositiveLoginTest -->
+    </classes>
+  </test> <!-- PositiveLoginTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->

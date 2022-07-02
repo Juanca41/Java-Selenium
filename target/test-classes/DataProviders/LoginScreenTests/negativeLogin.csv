@@ -1,0 +1,4 @@
+n,username,password,errorMessage
+1,juancarlosgularte,Helloworld10,Please enter a valid email address
+2,juancarlosgularte@bettervet.com,123,"Your password must contain at least one number, a capital letter and a minimum of 6 characters"
+3,juancarlosgularte@bettervet.com,IncorrectPassword1,User or password invalid.
